@@ -1,0 +1,11 @@
+{
+  "BaseURL": "https://amazon.com/",
+  "DriverToUse": {
+    "Type": "Chrome",
+    "Arguments": [ "start-maximized", "disable-extensions", "disable-infobars", "no-sandbox", "--incognito" ],
+    "TimeOuts": {
+      "ImplicitWait": 2,
+      "ExplicitWait": 10
+    }
+  }
+}
