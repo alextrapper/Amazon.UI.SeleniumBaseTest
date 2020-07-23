@@ -17,5 +17,8 @@ namespace Amazon.UI.PageObjects.PageElements.SearchResultsPageElements.Filters
         public CustomersReviewsSaySection CustomersReviewsSay =>
             new CustomersReviewsSaySection(_driver, _wait);
 
+        public PortableBluetothSpeakerFeatures PortableBluetothSpeakerFeatures =>
+            new PortableBluetothSpeakerFeatures(_driver, _wait);
+
     }
 }

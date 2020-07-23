@@ -58,6 +58,7 @@
     <Compile Include="PageElements\ItemPageElements\BuyBoxControl.cs" />
     <Compile Include="PageElements\ItemPageElements\ItemColorSelector.cs" />
     <Compile Include="PageElements\SearchResultsPageElements\Filters\FiltersSidePanel.cs" />
+    <Compile Include="PageElements\SearchResultsPageElements\Filters\Sections\PortableBluetothSpeakerFeatures.cs" />
     <Compile Include="PageElements\SearchResultsPageElements\Filters\Sections\CustomersReviewsSaySection.cs" />
     <Compile Include="PageElements\SearchResultsPageElements\Filters\Sections\DepartmentsFilterSection.cs" />
     <Compile Include="Pages\ItemPage.cs" />

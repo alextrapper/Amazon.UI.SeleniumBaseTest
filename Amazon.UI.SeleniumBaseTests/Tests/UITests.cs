@@ -24,14 +24,16 @@ namespace Amazon.UI.SeleniumBaseTests.Tests
             }
             else
             {
-                //workaround
+                //In some cases Filter 'Customers Reviews Say' doesn't show
+                searchResultsPage.Filters.PortableBluetothSpeakerFeatures.SelectFeatureKeyword("Ultra-Portable");
                 searchResultsPage.Search.AddSentenceToSearch("OontZ");
             }
             // d.Click “OontZ Angle 3(3rd Gen)”
             ItemPage itemPage = searchResultsPage.SearchResultsList.OpenItemPage("OontZ Angle 3 (3rd Gen)");
 
             // e.Choose color: “blue”
-            itemPage.ProductColor.SelectColor("Pink"); //Most popular color lead to Out-Of-Stock
+            //Most popular color, like 'Blue' lead to Out-Of-Stock
+            itemPage.ProductColor.SelectColor("Pink"); 
 
             // f.Click the “Buy Now” button
             var signInPage = itemPage.BuyBox.BuyNow();
